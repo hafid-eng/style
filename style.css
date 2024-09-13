@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+    font-family: "Karla", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* ## Primary
+
+    - Cyan: hsl(179, 62%, 43%)
+    - Bright Yellow: hsl(71, 73%, 54%)
+    
+    ### Neutral
+    
+    - Light Gray: hsl(204, 43%, 93%)
+    - Grayish Blue: hsl(218, 22%, 67%)
+    
+    ## Typography
+    
+    ### Body Copy
+    
+    - Font size: 16px
+ */
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+color: white;
+}
+section{
+    width: 70%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 2px 7px black;
+    border-radius: 5px;
+
+
+}
+.main{
+    width: 100%;
+    height: 40%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-inline:30px ;
+
+}
+.article{
+    width: 100%;
+    height: 60%;
+    background-color: crimson;
+    display: flex;
+    flex-direction: row;
+
+
+
+}
+.aside1,.aside2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-inline: 30px;
+}
+.aside2 p{
+   
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+.main p {
+    font-weight: 300;
+    color: hsl(201, 10%, 32%);
+}
+.main h1{
+    color: hsl(179, 62%, 43%) ;
+}
+.main h4{
+    color: hsl(71, 73%, 54%);
+}
+.aside1 span {
+    font-size: 14px;
+    font-weight: 100;
+    margin-left: 20px;
+}
+.aside1{
+    background-color:  hsl(179, 67%, 38%);
+}
+.aside2{
+    background-color:  hsl(179, 62%, 43%);
+}
+.aside1 p {
+    font-size: 16px;
+    font-weight: 200;
+    
+}
+button {
+    color: white;
+    width: 70%;
+    height: 40px;
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 7px black;
+}
+@media (max-width: 374px){
+    body{
+       width: 100%;
+       height: 100%;
+       
+        
+    }
+    section{
+        width: 90%;
+        height: 75%;
+    }
+    .article{
+        display: flex;
+        flex-direction: column;
+    }
+    .main{
+        padding-block: 30px;
+        gap: 10px;
+    }
+    .aside1,.aside2{
+        gap: 10px;
+        padding-block: 30px;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-inline: 30px;
+    }
+}
